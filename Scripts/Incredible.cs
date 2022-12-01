@@ -32,7 +32,7 @@ public class Incredible : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         if (!Microgame || !isNoised) { tap_times = 0; }
         GameObject[] g = GameObject.FindGameObjectsWithTag("People");
-        tx.gameObject.SetActive(false);
+        //tx.gameObject.SetActive(false);
         for (int i = 0; i < g.Length - 1; i++)
         {
             nav_list.Add(g[i].GetComponent<NavMeshAgent>());
