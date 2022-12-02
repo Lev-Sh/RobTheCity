@@ -27,7 +27,7 @@ public class houseowner : MonoBehaviour {
 	[SerializeField] private Transform[] emoji;
 	void Start () 
 	{
-        agent = GetComponent<NavMeshAgent>();
+		agent = GetComponent<NavMeshAgent>();
 		Transform Emojis = transform.Find("Emoji");
 		if (IPost) { StartCoroutine(PostMove()); }
 		h = true;
